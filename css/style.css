@@ -438,6 +438,17 @@ body {
   }
 }
 
+.main-header.scrolled {
+  height: 50px;
+  background: rgba(0, 0, 0, 0.9);
+  color: #ff0057;
+}
+
+.main-header.scrolled .menu-icon__line, .main-header.scrolled .menu-icon__line::before, .main-header.scrolled .menu-icon__line::after {
+  background: #ff0057;
+}
+
+
 .hero {
   background-image: url(../img/background.png);
   height: 100vh;
