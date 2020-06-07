@@ -582,9 +582,11 @@ body {
  border-left: 3px solid #f96394;
 }
 .hero .hero-wrap .btn-group {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  bottom: 0;
 }
 .hero .hero-wrap .hero-btn .btn-sidebar {
   
