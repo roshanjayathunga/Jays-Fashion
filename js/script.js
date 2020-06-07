@@ -1,8 +1,10 @@
-const navlink = document.querySelector('.nav-link');
+const header = document.querySelector('.main-header');
 
-navlink.addEventListener('onmouseover', () => {
-    console.log('sdsd')
-    navlink.classList.remove('active');
-
-
-});
+window.addEventListener('scroll', () =>{
+    const scrollPos = window.scrollY;
+    if(scrollPos > 10 ){
+        header.classList.add('scrolled');
+    }else{
+        header.classList.remove('scrolled')
+    }
+})
