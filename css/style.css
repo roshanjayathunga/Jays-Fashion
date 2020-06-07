@@ -48,7 +48,6 @@ body {
 .main-header a {
   text-decoration: none;
   color: inherit;
-  text-transform: uppercase;
 }
 
 .main-header .nav-links {
@@ -546,6 +545,33 @@ body {
 .hero .hero-wrap .hero-btn:nth-child(3):hover .btn-sidebar {
   left: 375px;
   transition: 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 767px) {
+
+  .main-header .nav-links .nav-link a.active::before{
+      content: '';
+      width: 25px;
+      height: 3px;
+      background-color: #e90352;
+      position: absolute;
+  }
+  .main-header .nav-links .nav-link a {
+    margin: 0;
+    font-size: 16px;
+    margin: 0.8rem;
+  }
+  .main-header .nav-links .nav-link a:hover {
+    background: transparent;
+  }
+  .main-header .nav-links .nav-link a:hover::before {
+    content: '';
+    width: 25px;
+    height: 3px;
+    background-color: #e90352;
+    position: absolute;
+}
+
 }
 
 @media screen and (max-width: 767px) {
