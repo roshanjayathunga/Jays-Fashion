@@ -100,10 +100,10 @@ body {
 .main-header .menu-icon__line {
   display: block;
   position: relative;
-  background: #000;
+  background: #e90352;
   height: 2px;
   width: 20px;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .main-header .menu-icon__line::before, .main-header .menu-icon__line::after {
@@ -143,41 +143,48 @@ body {
   }
   .main-header .menu-icon__line::before {
     -webkit-animation: closedTop 0.8s backwards;
-            animation: closedTop 0.8s backwards;
+    animation: closedTop 0.8s backwards;
     animation-direction: reverse;
+    background-color: #e90352;
+    height: 2px;
+    border-radius: 0;
   }
   .main-header .menu-icon__line::after {
     -webkit-animation: closedBtm 0.8s backwards;
-            animation: closedBtm 0.8s backwards;
+    animation: closedBtm 0.8s backwards;
     animation-direction: reverse;
+    background-color: #e90352;
+    height: 2px;
+    border-radius: 0;
   }
   .main-header .nav-links {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     opacity: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 10rem 0;
-    height: 100vh;
-    width: 100vw;
+    height: 90vh;
+    width: 65vw;
     font-size: 2rem;
     color: #ffffff;
-    background: #424242;
+    background: #E90352;
+    font-size: 21px;
     -webkit-transition: opacity 0.8s 0.5s, -webkit-clip-path 1s 0.5s;
     transition: opacity 0.8s 0.5s, -webkit-clip-path 1s 0.5s;
     transition: opacity 0.8s 0.5s, clip-path 1s 0.5s;
     transition: opacity 0.8s 0.5s, clip-path 1s 0.5s, -webkit-clip-path 1s 0.5s;
     -webkit-clip-path: circle(200px at top right);
-            clip-path: circle(200px at top right);
+    clip-path: circle(200px at top right);
   }
   .main-header .nav-links .nav-link {
     opacity: 0;
@@ -585,8 +592,10 @@ body {
 }
   .hero .hero-wrap .product_1 {
     background: none;
+    display: none;
   }
   .hero .hero-wrap .product_2 {
     background: none;
+    display: none;
   }
 }
